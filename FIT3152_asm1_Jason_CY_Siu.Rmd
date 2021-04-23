@@ -18,7 +18,8 @@ Read the data
 ```{r read data}
 rm(list = ls())
 set.seed(31084222)
-data <-  read.csv("C:/Users/sjsa3/Desktop/Shared_with_Mac/year2_sem1/FIT3152/Assignment_FIT3152_2021/webforum.csv")
+path = "C:/Users/sjsa3/Desktop/Shared_with_Mac/year2_sem1/FIT3152/Assignment_FIT3152_2021/webforum.csv"
+data <-  read.csv(path)
 
 data <- data[sample(nrow(data),20000),] #20000 rows
 ```
